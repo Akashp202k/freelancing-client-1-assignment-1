@@ -1,4 +1,4 @@
 "docker exec -it $(docker ps -q --filter ancestor=wordpress) /bin/bash -c 'wp config set DB_NAME your_database_name'",
-      "docker exec -it $(docker ps -q --filter ancestor=wordpress) /bin/bash -c 'wp config set DB_USER your_username'",
-      "docker exec -it $(docker ps -q --filter ancestor=wordpress) /bin/bash -c 'wp config set DB_PASSWORD your_password'",
-      "docker exec -it $(docker ps -q --filter ancestor=wordpress) /bin/bash -c 'wp config set DB_HOST your_rds_endpoint'",
+"docker exec -it $(docker ps -q --filter ancestor=wordpress) /bin/bash -c 'wp config set DB_USER your_username'",
+"docker exec -it $(docker ps -q --filter ancestor=wordpress) /bin/bash -c 'wp config set DB_PASSWORD your_password'",
+"docker exec -it $(docker ps -q --filter ancestor=wordpress) /bin/bash -c 'wp config set DB_HOST your_rds_endpoint'",
