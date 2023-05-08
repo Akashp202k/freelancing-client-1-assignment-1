@@ -1,2 +1,2 @@
-*.tfvars
+# *.tfvars
 *.terraform
