@@ -1,6 +1,6 @@
 # freelancing-client-1-assignment-1
 
-Deploy WordPress with MySQL(aws RDS) with Terraform on AWS
+* Deploy WordPress with MySQL(aws RDS) with Terraform on AWS
     
     • Need to create a RDS instance with mysql needs to be connected to wordpress
     • Need to create a EC2 instance and install wordpress using latest docker image, for database connection, use the above RDS mysql instance   
