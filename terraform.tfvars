@@ -19,9 +19,9 @@ DB_PASSWORD          = "Akash202k"
 
 USERDATA_FILE_PATH = "scripts/ec2-wordpress-userdata.sh"
 KEY_NAME           = "wordpress"
-PUBLIC_KEY_PATH    = "~/.ssh/akash.pub"
+PUBLIC_KEY_PATH    = "~/.ssh/id_rsa.pub"
 EC2_AMI_ID         = "ami-007855ac798b5175e"
 EC2_INSTANCE_TYPE  = "t2.small"
 
-PRIVATE_KEY_PATH = "~/.ssh/akash"
+PRIVATE_KEY_PATH = "~/.ssh/id_rsa"
 
