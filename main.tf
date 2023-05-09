@@ -66,26 +66,3 @@ resource "aws_instance" "wordpress" {
 
 }
 
-
-// connection between rds and wordpress running  docker container 
-
-# resource "null_resource" "configure_wordpress" {
-#   depends_on = [aws_instance.wordpress]
-
-#   connection {
-#     host        = aws_instance.wordpress.public_ip
-#     type        = "ssh"
-#     user        = "ubuntu"                   # Update with your desired SSH user
-#     private_key = file(var.PRIVATE_KEY_PATH) # Replace with the path to your private key
-#   }
-
-#   provisioner "remote-exec" {
-#     inline = [
-#       "sudo docker exec $(sudo docker ps -q --filter ancestor=wordpress) wp config set DB_NAME ${var.DB_NAME}",
-#       "sudo docker exec $(sudo docker ps -q --filter ancestor=wordpress) wp config set DB_USER ${var.DB_USERNAME}",
-#       "sudo docker exec $(sudo docker ps -q --filter ancestor=wordpress) wp config set DB_PASSWORD ${var.DB_PASSWORD}",
-#       "sudo docker exec $(sudo docker ps -q --filter ancestor=wordpress) wp config set DB_HOST ${aws_db_instance.db_instance.endpoint}",
-#     ]
-#   }
-# }
-
