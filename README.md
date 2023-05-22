@@ -1,4 +1,4 @@
-# freelancing-client-1-assignment-1
+# Automate deplyment of statefull wordpress website with tetrraform 
 
 * Deploy WordPress with MySQL(aws RDS) with Terraform on AWS
     
